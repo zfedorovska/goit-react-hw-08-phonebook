@@ -18,9 +18,9 @@ export default function ContactList() {
 
   return (
     <div>
-      <ul className="list-group">
+      <ul className="list-group col col-lg-5">
         {contacts.map(({ id, name, number }) => (
-          <li className="list-group-item" key={id}>
+          <li className="list-group-item w-auto" key={id}>
             <p className={s.contactItem}>
               {name}: {number}{' '}
               <Button
